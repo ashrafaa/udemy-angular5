@@ -1,0 +1,10 @@
+p {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20 0;
+    text-align: center;
+    margin: 10 50;
+}
