@@ -1,0 +1,18 @@
+<div class="register">
+    <label>Enter username: </label>
+    <input class="form-control" type="text" [(ngModel)]="username">
+    <br>
+    <label>Enter age: </label>
+    <input class="form-control" type="text" [(ngModel)]="age">
+    <p>{{ checkAge() }}</p>
+    <br>
+    <!--<button 
+        class="btn btn-primary" 
+        [disabled]="username === ''" 
+        (click)="username = ''">Submit</button>-->
+    <button 
+        class="btn btn-primary" 
+        [disabled]="!checkIfEmpty()" 
+        (click)="onClick()">Submit</button>
+    <p>{{ checkText }}</p>
+</div>
