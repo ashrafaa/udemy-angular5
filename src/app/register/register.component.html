@@ -14,5 +14,8 @@
         class="btn btn-primary" 
         [disabled]="!checkIfEmpty()" 
         (click)="onClick()">Submit</button>
-    <p>{{ checkText }}</p>
+    <p *ngIf="allChecked; else noEntry">{{ checkText }}</p>
+    <ng-template #noEntry>
+        <p>Please fill in all details!</p>
+    </ng-template>
 </div>

@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class RegisterComponent {
     username: string = '';
     age: string = '';
-
+    allChecked: boolean = false;
+    checkText: string = 'User registered!';
+    
     constructor() {
     }
 
@@ -24,6 +26,7 @@ export class RegisterComponent {
     }
 
     onClick(): void {
+        this.allChecked = true;
         this.username = '';
         this.age = '';
     }
