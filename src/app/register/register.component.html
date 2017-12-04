@@ -6,6 +6,7 @@
     <input class="form-control" type="text" [(ngModel)]="age">
     <p>{{ checkAge() }}</p>
     <br>
+    <p>{{ username }} will be in <span [ngStyle]="{color: camp}">{{ camp }}</span> camp!</p>
     <!--<button 
         class="btn btn-primary" 
         [disabled]="username === ''" 

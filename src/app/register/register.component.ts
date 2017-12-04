@@ -10,8 +10,10 @@ export class RegisterComponent {
     age: string = '';
     allChecked: boolean = false;
     checkText: string = 'User registered!';
-    
+    camp: string = '';
+
     constructor() {
+        this.camp = Math.random() > 0.5 ? 'red': 'blue';
     }
 
     checkIfEmpty(): boolean {
